@@ -50,7 +50,7 @@ async def on_message(message):
         value = message.content[8:]
         embed = discord.Embed(color=selcolor)
         embed.add_field(name="\u200b", value=value, inline=False)
-        embed.set_author(name="BC ClaN", icon_url=message.author.avatar_url)
+        embed.set_author(name="KPS BOT", icon_url=message.author.server_url)
 
         await message.channel.send(embed=embed)
         await message.delete()
