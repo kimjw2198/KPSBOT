@@ -56,7 +56,13 @@ async def on_message(message):
 
             await message.channel.send(embed=embed)
             await message.delete()
-
+        else
+            embed = discord.Embed(color=selcolor)
+            embed.add_field(name="\u200b", value="당신은 이 명령어를 사용할 권한이 없습니다.", inline=False)
+            embed.set_author(name="KPS BOT")
+            await message.channel.send(embed=embed)
+            await message.delete()
+            
     if message.content.startswith("/경고"):
         if message.author.guild_permissions.manage_messages:
             n = message.content[4:5]
