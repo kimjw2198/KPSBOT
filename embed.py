@@ -74,7 +74,7 @@ async def on_message(message):
         embed = discord.Embed(color=0xFF0000)
         embed.add_field(name="\u200b", value=f"+ 디스코드아이디: {user}\n+ 제재 사유 : {reason}\n+ 처리 사항 : 밴\n+ 해제 날짜 : 영구\n+ 처리자 : {men}", inline=False)
         embed.set_author(name="KaKao PUBG SCRIM²⁰²¹ [KPS] 제재")
-        await client.get_channel(791370715500118086).send(embed=embed)
+        await client.get_channel(791370781196156938).send(embed=embed)
 
     if message.content == '/내정보':
         user = message.author
